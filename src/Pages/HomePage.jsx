@@ -28,14 +28,9 @@ export function HomePage(){
                     { products.map((product) => {
                     return (
                         <div key={product.id} className="product-container">
-                            <div className="product-image-container">
-                                <img className="product-image"
-                                src={product.image} />
-                            </div>
+                            <div className="product-image-container"> <img className="product-image" src={product.image} /> </div>
 
-                            <div className="product-name limit-text-to-2-lines">
-                                {product.name}
-                            </div>
+                            <div className="product-name limit-text-to-2-lines"> {product.name} </div>
 
                             <div className="product-rating-container">
                                 <img className="product-rating-stars"
@@ -45,9 +40,7 @@ export function HomePage(){
                                 </div>
                             </div>
 
-                            <div className="product-price">
-                                ${(product.priceCents / 100).toFixed(2)}
-                            </div>
+                            <div className="product-price"> ${(product.priceCents / 100).toFixed(2)} </div>
 
                             <div className="product-quantity-container">
                                 <select>
@@ -65,15 +58,8 @@ export function HomePage(){
                             </div>
 
                             <div className="product-spacer"></div>
-
-                            <div className="added-to-cart">
-                                <img src="images/icons/checkmark.png" />
-                                Added
-                            </div>
-
-                        <button className="add-to-cart-button button-primary">
-                            Add to Cart
-                        </button>
+                            <div className="added-to-cart"><img src="images/icons/checkmark.png" /> Added</div>
+                        <button className="add-to-cart-button button-primary"> Add to Cart</button>
                     </div>
                     ) 
                     }) };
