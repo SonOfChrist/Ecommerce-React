@@ -3,21 +3,17 @@ import axios from 'axios'
 import { Header } from '../components/Header';
 import './HomePage.css';
 
-export function HomePage(){
-    // Runs this code everytime a component is create or updated
+export function HomePage({ cart }){
+    // Runs this code everytime a component is create or updated && Saving the product data inside useState
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         axios.get('/api/products')
-        .then((response) => {
-            setProducts(response.data)
-        });
-        axios.get('/api/cart-items')
-        .then((response) => {
-            setCart(response.data)
-        })
-    }, []);
+            .then((response) => {
+                setProducts(response.data)
+            });
+            
+        }, []);
     
     return (
         <>
