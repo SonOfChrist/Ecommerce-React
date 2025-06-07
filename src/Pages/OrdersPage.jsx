@@ -6,8 +6,6 @@ import { Header } from '../components/Header';
 import './OrdersPage.css'
 
 
-
-
 export function OrdersPage ({ cart }) {
     const [orders, setOrders] = useState([]);
 
