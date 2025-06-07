@@ -9,12 +9,13 @@ import './App.css'
 
 
 function App() {
+  // Lifting the State Up
   const [cart, setCart] = useState([]);
-  useEffect(() =>{
+  useEffect(() => {
     axios.get('/api/cart-items?expand=product')
-            .then((response) => {
-                setCart(response.data)
-            })
+        .then((response) => {
+           setCart(response.data)
+        })
   }, [])
   return (
     <Routes>
