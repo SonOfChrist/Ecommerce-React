@@ -7,7 +7,7 @@ import './HomePage.css';
 export function HomePage({ cart, loadCart }){
     // Runs this code everytime a component is create or updated && Saving the product data inside useState
     const [products, setProducts] = useState([]);
-
+    const currentYear = new Date().getFullYear();
     useEffect(() => {
         const getHomeData = async () => {
             const response = await axios.get('/api/products');
@@ -24,6 +24,12 @@ export function HomePage({ cart, loadCart }){
                 <div className="home-page">
                     <ProductsGrid products={products} loadCart={loadCart}/>
                 </div>
+                <div>
+                <footer className="bg-blue-600 text-white text-center p-4 ">
+                © {currentYear} All rights reserved.
+                </footer>
+                </div>
+
         </>
         );
     }

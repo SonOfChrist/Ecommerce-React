@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { OrderSummary } from './OrderSummary';
 import { useState, useEffect } from 'react';
-import './checkout-header.css';
-import './CheckoutPage.css';
 import { PaymentSummary } from './PaymentSummary';
-import { CheckoutHeader } from './CheckoutHeader';
+import { CheckoutHeader } from '../components/CheckoutHeader';
+import '../components/Checkout-header.css'
+import './CheckoutPage.css';
 
 
 export function CheckoutPage({ cart, loadCart }){

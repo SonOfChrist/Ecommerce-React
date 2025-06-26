@@ -18,9 +18,9 @@ function App() {
   };
 
   useEffect(() => {
-    
     loadCart();
-  }, [])
+  }, []);
+  
   return (
     <Routes>
       <Route index element={<HomePage cart={cart} loadCart={loadCart}/>} />

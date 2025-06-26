@@ -19,7 +19,6 @@ export function Product ({ loadCart, product }) {
     }
 
     return (
-
         <div className="product-container">
             <div className="product-image-container"> 
                 <img className="product-image" 
