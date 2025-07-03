@@ -5,9 +5,7 @@ import axios from "axios";
 export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }){
     return (
         <div className="delivery-options">
-            <div className="delivery-options-title">
-            Choose a delivery option Free OR Pay:
-            </div>
+            <div className="delivery-options-title"> Choose a delivery option Free OR Pay: </div>
 
             {deliveryOptions.map((deliveryOption) => {
                 let priceString = 'FREE Shipping'

@@ -14,10 +14,9 @@ export function PaymentSummary({ paymentSummary, loadCart }){
 
     return(
         <div className="payment-summary">
-            <div className="payment-summary-title">
-                Payment Summary
-            </div>
+            <div className="payment-summary-title">Payment Summary</div>
 
+            {/* Checking if the Payment Summary is Loaded */}
             {paymentSummary && (
                 <>
                     <div className="payment-summary-row">
@@ -45,9 +44,7 @@ export function PaymentSummary({ paymentSummary, loadCart }){
                     <div className="payment-summary-money">{formatMoney(paymentSummary.totalCostCents)}</div>
                     </div>
 
-                    <button className="place-order-button button-primary" onClick={createOrder}>
-                    Place your order
-                    </button>
+                    <button className="place-order-button button-primary" onClick={createOrder}> Place your order</button>
                     </>
              )}
         </div>
