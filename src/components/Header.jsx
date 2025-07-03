@@ -19,7 +19,7 @@ export function Header({ cart }){
             <div className="middle-section">
                 <input className="search-bar" type="text" placeholder="Search" />
                 <button className="search-button">
-                <img className="search-icon" src="images/icons/search-icon.png" />
+                    <img className="search-icon" src="images/icons/search-icon.png" />
                 </button>
             </div>
 

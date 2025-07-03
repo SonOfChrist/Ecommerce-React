@@ -7,11 +7,9 @@ import { OrdersPage } from './Pages/OrdersPage';
 import { TrackingPage } from './Pages/TrackingPage';
 import './App.css'
 
-
 function App() {
-  // Lifting the State Up
+  // Lifting the State Up for cart to be shared between Homepage and CheckoutPage
   const [cart, setCart] = useState([]);
-
   const loadCart = async () => {
     const response = await axios.get('/api/cart-items?expand=product')
          setCart(response.data)
