@@ -155,3 +155,10 @@
   height: 34px;
   margin-top: 1px;
 }
+.footer {
+  background-color: rgb(8, 79, 45);
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 4px;
+}

@@ -1,6 +1,7 @@
 import { Header } from '../components/Header';
 import { Link } from 'react-router';
 import './tracking.css';
+import { Footer } from '../components/footer';
 
 export function TrackingPage({ cart }) {
     return (
@@ -45,6 +46,7 @@ export function TrackingPage({ cart }) {
                 </div>
             </div>
             </div>
+            <Footer />
         </>
     );
 }

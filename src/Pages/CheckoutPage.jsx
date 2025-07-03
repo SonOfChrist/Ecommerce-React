@@ -5,6 +5,8 @@ import { PaymentSummary } from './PaymentSummary';
 import { CheckoutHeader } from '../components/CheckoutHeader';
 import '../components/Checkout-header.css'
 import './CheckoutPage.css';
+import { Footer } from '../components/footer';
+
 
 
 export function CheckoutPage({ cart, loadCart }){
@@ -35,6 +37,7 @@ export function CheckoutPage({ cart, loadCart }){
                 <PaymentSummary paymentSummary={paymentSummary} loadCart={loadCart} />
             </div>
             </div>
+            <Footer />
         </>
     );
 }
