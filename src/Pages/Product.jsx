@@ -5,6 +5,8 @@ import { formatMoney } from "../utils/money";
 export function Product ({ loadCart, product }) {
     const [quantity, setQuantity] = useState(1);
 
+    { /*Making request to the Back-End and adding the product to backEnd*/ }
+
         const addToCart =  async () => {
             await axios.post('/api/cart-items', {
                 productId: product.id,
@@ -33,16 +35,16 @@ export function Product ({ loadCart, product }) {
 
             <div className="product-quantity-container">
                 <select value={quantity} onChange={selectQuantity}>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
             </div>
 
